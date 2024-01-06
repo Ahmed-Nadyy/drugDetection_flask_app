@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Drug Detection</title>
+    <style>
+     .in{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        /* flex-direction: column; */
+     }
+     .inn{
+        display: flex;
+        flex-direction: column;
+     }
+
+    </style>
+</head>
+<body>
+    <center>
+
+        <h1>Drug Detection</h1>
+<div class="in">
+        <form method="POST" action="{{url_for('home')}}" class="inn">
+         <label for="a">Enter your age</label>
+         <br>
+         <input type="text" name="a">
+         <br>
+         <label for="b">Enter your gender</label>
+         <br>
+         <input type="text" name="b">
+         <br>
+         <label for="c">Enter Blood Pressure</label>
+         <br>
+         <input type="text" name="c">
+         <br>
+         <label for="d">Enter Colestrol</label>
+         <br>
+         <input type="text" name="d">
+         <br>
+         <label for="e">Enter the percentage of Na to K</label>
+         <br>
+         <input type="text" name="e">
+         <br>
+         <input type="submit" value="Predict">
+
+        </form>
+    </div>
+    </center>
+</body>
+</html>

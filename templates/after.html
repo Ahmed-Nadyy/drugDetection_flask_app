@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .in{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: flex;
+
+        flex-direction: column;
+     }
+     .inn{
+        display: flex;
+        flex-direction: column;
+     }
+     .im{
+        width: 300px;
+        height: 300px;
+     }
+
+    </style>
+</head>
+<body>
+    <center>
+
+        <h1>Prediction</h1>
+<div class="in">
+        {%if data == 4%}
+        <!-- <h2>{{data}}</h2> -->
+        
+        <h2>Panadol</h2>
+        <br>
+        <img src="../imgs/4.jpg" alt="" class="im">
+        {%elif data == 1%}
+        <h2>Catafast</h2>
+        <br>
+        <img src="../imgs/1.jpg" alt="" class="im">
+        {%elif data == 2%}
+        <h2>Cataflam</h2>
+        <br>
+        <img src="../imgs/2.jpg" alt="" class="im">
+        {%elif data == 3%}
+        <h2>Megranil</h2>
+        <br>
+        <img src="../imgs/3.jpg" alt="" class="im">
+        {%elif data == 0%}
+        <h2>Brufen</h2>
+        <br>
+        <img src="../imgs/0.jpg" alt="" class="im">
+        {%endif%}
+    </div>
+    <br><br>
+    <a href="/"> go back to home page </a>
+    </center>
+</body>
+</html>

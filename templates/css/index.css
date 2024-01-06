@@ -1,0 +1,35 @@
+body{
+font-family: 'Noto Sans Arabic', sans-serif;
+font-family: 'Righteous', cursive;
+font-family: 'Roboto', sans-serif;
+}
+section{
+    width: 100%;
+    height: 935px;
+    /* background-color: aquamarine; */
+    overflow: hidden;
+}
+.cont_one{
+    width: inherit;
+    height: inherit;
+}
+.back_img{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    z-index: -1;
+    /* background-image: url("/imgs/3065097.jpg"); */
+    background-size: cover;
+    
+    background-image: 
+    linear-gradient(to bottom right, #000000,#12246af9, #00f4d37a)
+    /* linear-gradient(to top right, #12236a, #00f4d2);  */
+    
+}
+.back_img_two{
+    z-index: -1;
+    position: absolute;
+    
+    /* width: 200px; */
+    
+}
